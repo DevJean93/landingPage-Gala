@@ -11,37 +11,9 @@ window.onscroll = function() {
         subir.classList.remove("irArriba");
     }
 
-    if (scrollPosY >= 910) {
-        cardAnimated = document.getElementById('cardAnimada');
-        cardAnimated.classList.add("boxCardAnimated");
-    } else {
-        cardAnimated = document.getElementById('cardAnimada');
-        cardAnimated.classList.remove("boxCardAnimated");
-    }
-
+ 
 };
 
-
-// AGREGA CLASE current AL HACER SCROLL 
-let mainNavLinks = document.querySelectorAll("nav div ul li a");
-
-window.addEventListener("scroll", event => {
-    event.preventDefault();
-
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach(link => {
-        let section = document.querySelector(link.hash);
-        if (
-            section.offsetTop <= fromTop &&
-            section.offsetTop + section.offsetHeight > fromTop
-        ) {
-            link.classList.add("current");
-        } else {
-            link.classList.remove("current");
-        }
-    });
-});
 
 
 // DESPLAZAMIENTO SMOOTH SCROLL
