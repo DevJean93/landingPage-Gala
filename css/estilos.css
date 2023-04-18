@@ -261,6 +261,17 @@ a.botonGetStarted:hover {
     color: #02d2b5;
 }
 
+.ImgMarcas{
+    transform: scale(0.9);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    
+}
+.ImgMarcas:hover{
+    cursor: pointer;
+    transform: scale(1, 1);
+}
 .cardFeatures:hover {
     cursor: pointer;
     transform: scale(0.9, 0.9);
