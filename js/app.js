@@ -64,11 +64,29 @@ window.onload = function() {
     }
 }
 
+function ToastAlert(icono,titulo){
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: icono,
+        title: titulo
+      })
 
+}
+  let formulario = document.getElementById('form')
+// Configuracion de envio de correos 
 const btn = document.getElementById('button');
-
- document.getElementById('form')
-
+    document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
@@ -79,10 +97,12 @@ const btn = document.getElementById('button');
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+      btn.value = 'Enviar Correo';
+      ToastAlert("success","Correo Enviado!");
+      formulario.reset();
     }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      btn.value = 'Enviar Correo';
+      ToastAlert("warning",err);
+   //   alert(JSON.stringify(err));
     });
 });
