@@ -70,7 +70,7 @@
                 </div>
 
                 <article class="contenido">
-           
+                    <h3>EL SABOR MEXICANO</h3>
                     <p style="text-align: justify;">Los Cebollines, una marca de Restaurantes y Servicios, S.A., nace en 1983, como una taquería en la zona 9 de la ciudad de Guatemala, en la plazuela España- hoy conocida como Plaza España. Luego se convierte en una de las cadenas más importantes de restaurantes familiares de comida mexicana de la región. La marca se encuentra presente en Guatemala y El Salvador. 
                         La idea era aportar al mercado local algo diferente “había que ponerle, picante a cada detalle y ahí estaría la diferencia”. Pioneros de celebrar a todo pulmón a cada uno de los cumpleañeros, con charro y “las mañanitas”, así como en la preparación de la salsa y el guacamole en la mesa.
                         
@@ -87,15 +87,15 @@
                 </div>
 
                 <article class="contenido">
-              
-                    <p style="text-align: justify;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam possimus nemo sequi cum? Obcaecati eos possimus ea numquam fugit. Quae et labore accusamus consectetur voluptatum placeat incidunt quaerat quibusdam accusantium.</p>
-
+                    <h3>SALONES Y BANQUETES</h3>
                     <ul>
-                        <li> <span class="icon-check"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <li> <span class="icon-check"></span> <p style="text-align: justify;"> Realiza tu reunión de té, cumpleaños, capacitaciones o presentación de empresa, en nuestros salones con capacidades desde 15 personas. Todos cuentan con proyector, pantalla y rotafolio.</p>
                         </li>
-                        <li> <span class="icon-check"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <li> <span class="icon-check"></span> <p style="text-align: justify;"> Desde las mesas, sillas, mantelería, vajillas, cristalería, toldos,  personal de servicio y lo mejor de la comida internacional en donde lo necesite. Llenamos sus más altas expectativas a un buen precio. 
+                           </p>
                         </li>
-                    </ul>   
+                    </ul>
+                  
                 </article>
             </div>
         </section>
@@ -107,7 +107,7 @@
                 </div>
 
                 <article class="contenido">
-               
+                    <h3>COME SALUDABLE</h3>
                     <p style="text-align: justify;">Ofrecemos la mejor experiencia en alimentos para personas y organizaciones, con productos de alta calidad, sanos y seguros,  con un servicio amable y cortes, cumpliendo con nuestras  normas de seguridad alimentaria.
                         Nuestro Compromiso: SUCHEF se compromete a ofrecer un servicio de calidad sostenible y cumpliendo con todos los estándares ofrecidos a nuestros clientes. Además, estaremos innovando constantemente con el objetivo de mejorar la oferta de productos, de optimizar nuestros procesos y de adaptarnos a las tendencias gastronómicas tan cambiantes actualmente.
                     </p>
@@ -122,7 +122,7 @@
                 </div>
 
                 <article class="contenido">
-              
+                    <h3>VIVE LA EXPERIENCIA</h3>
                     <p style="text-align: justify;">
                         Somos una empresa dedicada al catering empresarial e individual, que viene a revolucionar el servicio de banquetes a domicilio en Guatemala.Top Catering Co. crea eventos que cubrirán más allá de toda expectativa, ya que es el único servicio de catering que revoluciona su cocina cada vez que el cliente lo solicita, creando su menú de acuerdo al concepto y deseos del cliente.
                     </p>
@@ -161,36 +161,37 @@
             <h3>Contactanos</h3>
 
             <div class="container contacto">
-                <form id="miForm">
+                <form id="form">  
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputName"><b>Nombre</b></label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Nombres..." required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputLastName"><b>Apellidos</b></label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Apellidos..." required>
-                        </div>
+                        <div class="field form-group col-md-6">
+                            <label for="nombre"><b>Nombre</b></label>
+                            <input type="text" class="form-control" name="nombre" id="nombre"placeholder="Nombre..."required>
+                          </div>   
+                          <div class="field form-group col-md-6">
+                            <label for="apellido"><b>Apellido</b></label>
+                            <input type="text" class="form-control" name="apellido" id="apellido"placeholder="Apellido..."required>
+                          </div>
+                    </div>              
+                    <div class="field form-group">
+                      <label for="email"><b>Correo</b></label>
+                      <input type="text"  class="form-control" name="email" id="email"placeholder="Correo..."required>
                     </div>
-
-                    <div class="form-group">
-                        <label for="inputEmail"><b>Email</b></label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email..." required>
+                    <div class="field form-group">
+                      <label for="asunto"><b>Asunto</b></label>
+                      <input type="text" class="form-control" name="asunto" id="asunto"placeholder="Asunto..."required>
                     </div>
-
-                    <div class="form-group">
-                        <label for="inputSubject"><b>Asunto</b></label>
-                        <input type="text" class="form-control" id="inputSubject" placeholder="Asunto..." required>
+                    <div class="field form-group">
+                      <label for="mensaje"><b>Mensaje</b></label>
+                      <textarea class="form-control" rows="5" name="mensaje" id="mensaje" placeholder="Mensaje..." placeholder="Mensaje..."required></textarea>
                     </div>
-
-                    <div class="form-group">
-                        <label for="message"><b>Mensaje</b></label>
-                        <textarea class="form-control" rows="5" id="message" placeholder="Mensaje..." required></textarea>
+                    <div class="field form-group" style="display: none;">
+                      <label for="reply_to">reply_to</label>
+                      <input type="text" name="reply_to" id="reply_to">
                     </div>
-
-
-                    <button type="submit" class="botonEnviarMensaje">Enviar Mensaje</button>
-                </form>
+                  
+                    <input type="submit" id="button"  class="botonEnviarMensaje" value="Send Email" >
+                  </form>
+                  
             </div>
         </section>
         <!-- Sección Contacto -->
@@ -211,7 +212,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('TG55IYYqY_ldd6mrl')
+  </script>
 </body>
 
 </html>

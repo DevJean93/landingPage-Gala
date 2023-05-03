@@ -261,6 +261,10 @@ a.botonGetStarted:hover {
     color: #02d2b5;
 }
 
+.boxCallToActions h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
 .ImgMarcas{
     transform: scale(0.9);
     -webkit-transition: all 0.5s ease;
@@ -289,7 +293,7 @@ a.botonGetStarted:hover {
     margin-bottom: 1rem;
 }
 
-.cardFeatures h4 {
+.contenido h4 {
     font-size: 14px;
     font-weight: bold;
 }
@@ -350,7 +354,7 @@ a.botonGetStarted:hover {
 .contenido p {
     margin-bottom: 40px;
     width: 80%;
-    color: #9c9c9c;
+    color: #555555;
 }
 
 .boxCardCallToActions {
