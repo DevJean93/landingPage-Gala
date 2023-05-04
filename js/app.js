@@ -14,6 +14,27 @@ window.onscroll = function() {
  
 };
 
+// AGREGA CLASE current AL HACER SCROLL 
+let mainNavLinks = document.querySelectorAll("nav div ul li a");
+
+window.addEventListener("scroll", event => {
+    event.preventDefault();
+
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+        ) {
+            link.classList.add("current");
+        } else {
+            link.classList.remove("current");
+        }
+    });
+});
+
 
 
 // DESPLAZAMIENTO SMOOTH SCROLL
@@ -48,7 +69,7 @@ window.onload = function() {
             e.preventDefault();
             const scrollElemId = e.target.href.split('#')[1];
             const scrollEndElem = document.getElementById(scrollElemId);
-
+      
             const anim = requestAnimationFrame(() => {
                 const stamp = new Date().getTime();
                 const duration = 1200;
