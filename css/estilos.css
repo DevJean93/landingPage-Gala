@@ -125,7 +125,7 @@ header {
 }
 
 .boxHeader .textosHeader {
-    width: 42%;
+    width: 60%;
     position: relative;
     left: 15%;
     transform: translateY(0);
@@ -168,7 +168,7 @@ a.botonGetStarted:hover {
 }
 
 .boxHeader .imgHeader {
-    right: -19%;
+    right: -1%;
     position: relative;
 }
 
@@ -520,7 +520,7 @@ a.botonGetStarted:hover {
 /* ESTILOS CONTACTO */
 
 .boxContacto {
-    padding: 50px;
+  
     background-color: #f6f6f6;
     height: 100%;
 }
@@ -595,7 +595,7 @@ a.botonGetStarted:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:810px) {
     .boxLogo {
         display: none;
     }
@@ -627,7 +627,7 @@ a.botonGetStarted:hover {
     .boxHeader .textosHeader {
         width: 90%;
         margin-bottom: 100px;
-        text-align: left;
+        text-align: center;
         left: 0;
         margin: 0 auto;
     }
