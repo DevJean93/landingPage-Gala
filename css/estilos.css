@@ -285,6 +285,8 @@ a.botonGetStarted:hover {
 
 .LineaDivision{
     color: #9c9c9c;
+    text-align: center;
+
 }
 .cardFeatures span {
     background: #00d2b5;
@@ -329,6 +331,7 @@ a.botonGetStarted:hover {
 }
 
 .imgCallToActions {
+    justify-items: center;
     width: 50%;
 }
 
