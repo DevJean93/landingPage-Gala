@@ -266,19 +266,21 @@ a.botonGetStarted:hover {
     font-weight: bold;
 }
 .ImgMarcas{
-    transform: scale(0.9);
+    transform: scale(0.7);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    
+    -o-transition: all 0.5s ease;   
+
+
 }
 .ImgMarcas:hover{
     cursor: pointer;
-    transform: scale(1, 1);
+    transform: scale(0.6, 0.6);
+    
 }
 .cardFeatures:hover {
     cursor: pointer;
-    transform: scale(0.9, 0.9);
+    transform: scale(0.5, 0.5);
 }
 
 .cardFeatures span {
@@ -317,7 +319,7 @@ a.botonGetStarted:hover {
 .callToActions {
 
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
