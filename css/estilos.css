@@ -283,6 +283,9 @@ a.botonGetStarted:hover {
     transform: scale(0.5, 0.5);
 }
 
+.LineaDivision{
+    color: #9c9c9c;
+}
 .cardFeatures span {
     background: #00d2b5;
     color: #fff;
