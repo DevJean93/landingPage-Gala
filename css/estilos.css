@@ -341,7 +341,7 @@ a.botonGetStarted:hover {
 
 
 .carousel-inicial{
-    margin-top: 1%;
+    margin-top: 4%;
     margin-right: 2%;
 }
 
@@ -349,13 +349,13 @@ a.botonGetStarted:hover {
     margin-right: 2%; 
 }
 .c-item {
-  height: 480px;
+  height: 350px;
 }
 
 .c-img {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+ 
 }
 .contenido {
     display: grid;
