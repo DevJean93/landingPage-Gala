@@ -404,10 +404,6 @@ a.botonGetStarted:hover {
     }
 }
 
-.boxCardCallToActions img {
-    border-radius: 50%;
-    width: 50px;
-}
 
 .cardCallToActions .boxProfesional {
     display: flex;
