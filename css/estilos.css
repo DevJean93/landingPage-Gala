@@ -351,6 +351,15 @@ a.botonGetStarted:hover {
     font-size: 14px;
 }
 
+.c-item {
+    height: 480px;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
 .contenido {
     width: 50%;
     padding-top: 50px;
