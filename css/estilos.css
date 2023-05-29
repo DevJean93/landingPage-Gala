@@ -330,7 +330,7 @@ a.botonGetStarted:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: auto;
+    margin: 1%;
     flex-wrap: wrap;
 }
 
@@ -339,30 +339,28 @@ a.botonGetStarted:hover {
     width: 50%;
 }
 
-.imgCallToActions img {
-    width: 100%;
-    vertical-align: top;
+
+.carousel-inicial{
+    margin-top: 1%;
+    margin-right: 2%;
 }
 
-.callToActions .contenido ul li {
-    list-style: none;
-    margin-bottom: 12px;
-    color: #9c9c9c;
-    font-size: 14px;
+.carousel-secundario{
+    margin-right: 2%; 
 }
-
 .c-item {
-    height: 480px;
-  }
-  
-  .c-img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-  }
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
 .contenido {
+    display: grid;
+    place-content: center;
     width: 50%;
-    padding-top: 50px;
     padding-left: 30px;
 }
 
