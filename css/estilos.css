@@ -328,25 +328,30 @@ a.botonGetStarted:hover {
 .callToActions {
 
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 1%;
     flex-wrap: wrap;
 }
 
-.imgCallToActions {
-    justify-items: center;
-    width: 50%;
+.imgCallToActions {   
+ justify-content: space-between;
+ width: 50%;
 }
 
 
 .carousel-inicial{
-    margin-top: 4%;
     margin-right: 2%;
+    margin-left: 2%;
 }
 
 .carousel-secundario{
     margin-right: 2%; 
+    margin-left: 2%;
+}
+.carousel-final{
+
+    margin-bottom: 25px;
 }
 .c-item {
   height: 350px;
@@ -365,6 +370,7 @@ a.botonGetStarted:hover {
 }
 
 .contenido h3 {
+    margin-top: 2%;
     font-size: 30px;
     text-align: left;
     margin-bottom: 20px;
